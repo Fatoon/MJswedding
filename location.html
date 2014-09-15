@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>MS我们结婚啦</title>
+		<link href="css/style.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<script charset="utf-8" src="http://map.qq.com/api/js?v=2.exp&key=6GQBZ-C27HF-V3VJP-JPNX6-BSMFE-DCBH2"></script>
+		<script>
+		function init() {
+			var center = new qq.maps.LatLng(39.152450, 117.149420);
+			var map = new qq.maps.Map(document.getElementById('dituContent'), {
+				center: center,
+				zoom: 16
+			});
+			var marker = new qq.maps.Marker({
+				position: center,
+				map: map
+			});
+		}
+		</script>
+	</head>
+	<body onload="init()">
+		
+		<section >
+			<header>
+				<div class="container">
+					<h1 class="logo">
+					<img src="img/ms.png" alt="我们结婚啦">
+					</h1>
+					<nav>
+						<ul>
+							<li><a href="/">首页</a></li>
+							<li class="active"><a href="location.html">婚礼信息</a></li>
+							<li><a href="photo.html">婚纱照</a></li>
+						</ul>
+					</nav>
+				</div>
+				
+			</header>
+			
+		</section>
+		<section id="invite">
+			<div class="infomation">
+				<div class="container">
+					<img src="img/time.png" alt="2014.09.20 17:38" class="time">
+					<div class="position">
+						<img src="img/location.png" alt="贵尊园酒楼">
+						<p>天津市红桥区红旗路与北辛道交口（芥园清真寺斜对面前行50米）</p>
+					</div>
+				</div>
+			</div>
+			
+		</section>
+		<section id="map">
+			<div class="container">
+				
+				<div id="dituContent"></div>
+				<div class="guizun">
+					<img src="img/guizunyuan.jpg" alt="">
+					<p>天津市红桥区红旗路与北辛道交口（芥园清真寺斜对面前行50米）</p>
+				</div>
+				
+				
+			</div>
+		</section>
+		<footer>
+			<span class="welcome"></span>
+			<p>夏梦-张帅的婚礼 欢迎大家莅临</p>
+		</footer>
+		
+	</body>
+</html>

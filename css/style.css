@@ -110,7 +110,9 @@ nav .active a {
 .infomation .position img {
   margin-bottom: 20px;
 }
-#invite {
+#invite,
+#map,
+#photo {
   background-color: #291a1b;
 }
 .invitation {
@@ -124,6 +126,7 @@ nav .active a {
 .invitation .card-left {
   float: left;
   border-right: 1px solid #e5e5e5;
+  border-radius: 3px 0 0 3px;
 }
 .invitation .card-left img {
   display: block;
@@ -134,6 +137,7 @@ nav .active a {
   width: 478px;
   padding-top: 26px;
   background: url(../img/bg-card.jpg) repeat;
+  border-radius: 0 3px 3px 0;
 }
 .invitation .xi {
   margin-bottom: 27px;
@@ -215,16 +219,45 @@ footer .welcome {
   background: url(../img/welcome.png) 0 0 no-repeat;
   background-size: contain;
 }
+#dituContent {
+  width: 680px;
+  height: 480px;
+}
+#dituContent img {
+  max-width: inherit;
+}
+#photo {
+  padding: 20px 10px;
+}
+#map {
+  padding: 20px 0;
+}
+#map .container {
+  overflow: hidden;
+  zoom: 1;
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 20px;
+}
+#map #dituContent {
+  float: left;
+  width: 600px;
+  height: 480px;
+}
+#map .guizun {
+  float: right;
+  width: 280px;
+  color: #333;
+  line-height: 1.5;
+}
 @media (max-width: 640px) {
-  section {
-    height: auto;
-  }
   .container {
     width: 100%;
   }
   #index {
-    height: 100%;
-    background: #160d0f url(../img/bg.jpg) center 100px no-repeat;
+    height: 600px;
+    min-height: 100%;
+    background: #160d0f url(../img/bg.jpg) center 140px no-repeat;
     background-size: 640px auto;
   }
   nav ul {
@@ -256,11 +289,13 @@ footer .welcome {
     text-align: center;
     float: none;
     border-right: none;
+    border-radius: 3px 3px 0 0;
   }
   .invitation .card-right {
     float: none;
     width: 95%;
     margin: 0 auto;
+    border-radius: 0 0 3px 3px;
   }
   .infomation {
     text-align: center;
@@ -298,6 +333,46 @@ footer .welcome {
   }
   #friends span {
     display: none;
+  }
+  #map #dituContent {
+    float: none;
+    width: 95%;
+    height: 320px;
+    margin: 0 auto 20px;
+  }
+  #map .guizun {
+    float: none;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .rslides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .rslides li {
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+  .rslides li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+  }
+  .rslides img {
+    display: block;
+    height: auto;
+    float: left;
+    width: 100%;
+    border: 0;
   }
   footer {
     padding: 30px 0 20px;
