@@ -42,7 +42,15 @@ header {
 	position: relative;
 	padding: 36px 30px 16px;
 	border-bottom: 1px solid #262122;
+	width: 320px;
+	margin: 0 auto;
 }
+.love1{ position: absolute; right: 10px; top: 30px;  -webkit-animation:zoomIn 1s 10 both ;}
+.love2{ position: absolute; right: -20px; top: 34px; -webkit-animation:zoomIn 1s 10 0.6s both;}
+.lover dt{  -webkit-animation:fadeInUp 0.8s 1s both;}
+.lover dd{  -webkit-animation:fadeInUp 0.8s 1.3s both;}
+.xi{  -webkit-animation:swing 1s 2s 5  both;}
+
 nav {
 	ul {
 		width: 490px;
@@ -245,7 +253,64 @@ footer {
 		line-height: 1.5;
 	}
 }
+
+
+@-webkit-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+            transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+            transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+ 
+
 @media ( max-width:640px ) {
+	.love1{ right: 20px; top: 20px;  }
+.love2{  right: 0px; top: 4px;}
 	.container {
 		width: 100%;
 	}
@@ -383,4 +448,31 @@ footer {
 			background-size: contain;
 		}
 	}
+}
+
+@-webkit-keyframes swing {
+  20% {
+    -webkit-transform: rotate3d(0, 0, 1, 15deg);
+            transform: rotate3d(0, 0, 1, 15deg);
+  }
+
+  40% {
+    -webkit-transform: rotate3d(0, 0, 1, -10deg);
+            transform: rotate3d(0, 0, 1, -10deg);
+  }
+
+  60% {
+    -webkit-transform: rotate3d(0, 0, 1, 5deg);
+            transform: rotate3d(0, 0, 1, 5deg);
+  }
+
+  80% {
+    -webkit-transform: rotate3d(0, 0, 1, -5deg);
+            transform: rotate3d(0, 0, 1, -5deg);
+  }
+
+  100% {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+            transform: rotate3d(0, 0, 1, 0deg);
+  }
 }
