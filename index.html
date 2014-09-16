@@ -17,10 +17,10 @@
 			<header>
 				<div class="container">
 					<h1 class="logo">
-						<a href="/"><img src="img/ms.png" alt="我们结婚啦">
+					<a href="/"><img src="img/ms.png" alt="我们结婚啦">
 						<img src="img/heart-small.png" alt="" class="love1">
-						<img src="img/heart.png" alt="" class="love2"></a>
-						
+					<img src="img/heart.png" alt="" class="love2"></a>
+					
 					</h1>
 					<nav>
 						<ul>
@@ -110,7 +110,6 @@
 							<span>masterliu</span>
 							
 						</li>
-
 						<li>
 							<img src="img/boy1.jpg" alt="王林">
 							<em>王林</em>
@@ -118,24 +117,30 @@
 							
 						</li>
 						<li>
-						<img src="img/boy3.jpg" alt="宗志杰">
-						<em>宗志杰</em>
-						<span>zhijiezong</span>
-						
-					</li>
-				</ul>
-				</dd>
-			</dl>
+							<img src="img/boy3.jpg" alt="宗志杰">
+							<em>宗志杰</em>
+							<span>zhijiezong</span>
+							
+						</li>
+					</ul>
+					</dd>
+				</dl>
+			</div>
 		</div>
-	</div>
-</section>
-
-
-
-<footer>
-	<span class="welcome"></span>
-	<p>夏梦-张帅的婚礼 欢迎大家莅临</p>
-</footer>
-
+	</section>
+	<footer>
+		<span class="welcome"></span>
+		<p>夏梦-张帅的婚礼 欢迎大家莅临</p>
+	</footer>
+	<script type="text/javascript" src="http://tajs.qq.com/stats?sId=37209911" charset="UTF-8"></script>
+	<script src="http://cdn.staticfile.org/jquery/1.8.3/jquery.min.js"></script>
+	<script>
+		$(function() {
+			var flag = WeixinApi.openInWeixin();
+			if (flag) {
+				$('body').addClass('weixin');
+			}
+		});
+	</script>
 </body>
 </html>
